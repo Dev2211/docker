@@ -1,0 +1,26 @@
+{
+  "name": "common-dto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "nest build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nestjs-modules/mailer": "^1.5.1",
+    "@types/nodemailer": "^6.4.0",
+    "@types/validator": "^13.6.5",
+    "buffer-reader": "^0.1.0",
+    "buffered-reader": "^1.0.1",
+    "class-validator": "^0.12.2",
+    "handlebars": "^4.7.6",
+    "nodemailer": "^6.4.11",
+    "request": "^2.88.2",
+    "url-parse": "^1.4.7"
+  }
+}

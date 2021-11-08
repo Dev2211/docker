@@ -1,0 +1,22 @@
+server:
+  port : 3000
+
+openVidu:
+  urlOpenViduServer : "https://devideo.virujh.com/dashboard"
+  secret : "Virujh#123"
+
+JWT :
+  expiresIn : 36000000
+  secret : 'topSecret51'
+  defaultStrategy : 'jwt'
+
+redis : 
+  host: 'virujhliveredis-001.ysl6gq.0001.aps1.cache.amazonaws.com'
+  # host: 'redis-prod-server'
+  port: 6379
+  
+emailUpdate :
+  adminEmail: 'doc-enquiry@virujh.com'
+
+urlPath :
+  baseUrl: "https://www.virujh.com"

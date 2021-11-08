@@ -1,0 +1,24 @@
+server :
+   URL : 'redis://virujhliveredis-001.ysl6gq.0001.aps1.cache.amazonaws.com:6379'
+  #  URL : 'redis://redis-prod-server:6379'
+database :
+  type : 'postgres'
+  username : 'postgres'
+  password : 'mPmpz93VUFeR3m8m'
+  host: 'virujh-production.cjxvyzcwczxh.ap-south-1.rds.amazonaws.com'
+  database : 'liveauth'
+  port : 5432
+  synchronize : false
+  
+JWT :
+  expiresIn : 36000000
+  secret : 'topSecret51'
+  defaultStrategy : 'jwt'
+
+textLocal :
+  APIKey : 'ZykcD17gN0A-7D7kZfoBD4Xf9RZFG5v3shNk28WVDw'
+  sender: 'TXTLCL'
+
+virujhEmail :
+  email: 'support@virujh.com'
+  pass: 'Viruj!2Yda'

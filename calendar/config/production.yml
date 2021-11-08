@@ -1,0 +1,17 @@
+server :
+   URL : 'redis://virujhliveredis-001.ysl6gq.0001.aps1.cache.amazonaws.com:6379'
+  #URL : 'redis://localhost:6379'
+  
+
+database :
+  type : 'postgres'
+  username : 'postgres'
+  password : 'mPmpz93VUFeR3m8m'
+  host: 'virujh-production.cjxvyzcwczxh.ap-south-1.rds.amazonaws.com'
+  database : 'livecalendar'
+  port : 5432
+  synchronize : false
+  
+openVidu:
+  urlOpenViduServer : "https://devideo.virujh.com/dashboard"
+  secret : "Virujh#123"

@@ -1,0 +1,55 @@
+version: "2"
+services:
+  redis:
+    build:
+      context: .
+      dockerfile: ./redis/Dockerfile
+  auth:
+    build:
+      context: .
+      dockerfile: ./auth/Dockerfile
+    environment:
+      - NODE_ENV=development
+    depends_on:
+      - redis
+    restart: on-failure
+
+  calendar:
+    build:
+      context: .
+      dockerfile: ./calendar/Dockerfile
+    environment:
+      - NODE_ENV=development
+    depends_on:
+      - redis
+    restart: on-failure	
+
+  gateway:
+    build:
+      context: .
+      dockerfile: ./gateway/Dockerfile
+    environment:
+      - NODE_ENV=development
+    depends_on:
+      - redis
+    ports:
+      - "3001:3000"
+    restart: on-failure	
+
+
+
+  # calendar:
+  #   build:
+  #     context: .
+  #     dockerfile: ./calendar/Dockerfile
+  #   environment:
+  #     - NODE_ENV= "development"     
+
+  # gateway:
+  #   build: 
+  #     context: .
+  #     dockerfile: ./gateway/Dockerfile
+
+  #   environment:
+  #     - NODE_ENV= "development"     
+

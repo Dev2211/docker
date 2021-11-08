@@ -1,0 +1,16 @@
+server :
+ URL : 'redis://localhost:6379'
+#  URL : 'redis://redis-server:6378'
+
+database :
+  type : 'postgres'
+  username : 'postgres'
+  password : 'postgres'
+  host: 'localhost'
+  database : 'livecalendar'
+  port : 5432
+  synchronize : false
+
+openVidu:
+  urlOpenViduServer: "https://dev.virujh.com/dashboard"
+  secret : "Virujh123"
